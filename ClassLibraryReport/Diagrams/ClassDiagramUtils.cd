@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ClassLibraryReport.Utils.DsConverter" Collapsed="true">
+    <Position X="6" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utils\DsConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibraryReport.Utils.DsUpdater" Collapsed="true">
+    <Position X="7.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utils\DsUpdater.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibraryReport.Utils.MhtConverter" Collapsed="true">
+    <Position X="9.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utils\MhtConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibraryReport.Utils.ObjConverter" Collapsed="true">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utils\ObjConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibraryReport.Utils.Serializer" Collapsed="true">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utils\Serializer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibraryReport.Utils.SimpleXmlUpdater" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utils\SimpleXmlUpdater.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibraryReport.Utils.StatsHelper" Collapsed="true">
+    <Position X="6" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASAAAAAAIAICAAAAAAAAAQAEAAAAgAAAAAAAQAAEEA=</HashCode>
+      <FileName>Utils\StatsHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibraryReport.Utils.TranslationsHelper" Collapsed="true">
+    <Position X="7.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utils\TranslationsHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Reports xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../Schemas/Reports.xsd">
+  <Report Name="Affaire 254">
+    <DataSets>
+    </DataSets>
+    <Body>
+      <ReportItems>
+        <Tablix Name="reportTable" DataSet="dataCollection" Dynamic="true" Paginate="true">
+          <Headers>
+            <Header Value="Cas" Type="System.String" />
+            <Header Value="Défenseur" Type="System.String" />
+            <Header Value="Accusateur" Type="System.String" />
+            <Header Value="Juge" Type="System.String" />
+            <Header Value="Raison" Type="System.String" />
+            <Header Value="Caution" Type="System.String" />
+          </Headers>
+          <Footers>
+            <Footer Value="Somme Colonne 1" Type="System.String" />
+            <Footer Value="Somme Colonne 2" Type="System.String" />
+            <Footer Value="Somme Colonne 3" Type="System.String" />
+            <Footer Value="Somme Colonne 4" Type="System.String" />
+            <Footer Value="Somme Colonne 5" Type="System.String" />
+            <Footer Value="Somme Colonne 6" Type="System.Double" />
+          </Footers>
+          <TablixColumns>
+            <TablixColumnsGrouping ColumnIndex="10" />
+          </TablixColumns>
+        </Tablix>
+      </ReportItems>
+    </Body>
+    <PageHeader>
+    </PageHeader>
+    <PageFooter>
+    </PageFooter>
+  </Report>
+  <Report Name="Rapport du 54">
+    <DataSets>
+    </DataSets>
+    <Body>
+      <ReportItems>
+        <Tablix Name="reportTable" DataSet="dataCollection2" Dynamic="true" Paginate="false">
+          <Headers>
+            <Header Value="Gros connard" Type="System.String" />
+            <Header Value="Test" Type="System.String" />
+            <Header Value="Cocorico" Type="System.String" />
+            <Header Value="Roger la test" Type="System.String" />
+            <Header Value="Collone de ouf" Type="System.String" />
+          </Headers>
+          <Footers>
+            <Footer Value="Somme Colonne 1" Type="System.String" />
+            <Footer Value="Somme Colonne 2" Type="System.String" />
+            <Footer Value="Somme Colonne 3" Type="System.String" />
+            <Footer Value="Somme Colonne 4" Type="System.String" />
+            <Footer Value="Somme Colonne 5" Type="System.String" />
+            <Footer Value="Somme Colonne 6" Type="System.String" />
+          </Footers>
+          <TablixColumns>
+            <TablixColumnsGrouping ColumnIndex="2" />
+          </TablixColumns>
+        </Tablix>
+      </ReportItems>
+    </Body>
+    <PageHeader>
+    </PageHeader>
+    <PageFooter>
+    </PageFooter>
+  </Report>
+</Reports>

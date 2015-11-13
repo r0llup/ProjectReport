@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<xs:schema id="DSPrestation" targetNamespace="http://tempuri.org/DSPrestation.xsd"
+           xmlns:mstns="http://tempuri.org/DSPrestation.xsd" xmlns="http://tempuri.org/DSPrestation.xsd"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+           xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified"
+           elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter"
+                  Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema"
+                  xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSPrestation" msdata:IsDataSet="true" msdata:UseCurrentLocale="true"
+              msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSPrestation"
+              msprop:Generator_UserDSName="DSPrestation">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table" msprop:Generator_TableClassName="TableDataTable"
+                    msprop:Generator_TableVarName="tableTable" msprop:Generator_TablePropName="Table"
+                    msprop:Generator_RowDeletingName="TableRowDeleting" msprop:Generator_UserTableName="Table"
+                    msprop:Generator_RowChangingName="TableRowChanging"
+                    msprop:Generator_RowEvHandlerName="TableRowChangeEventHandler"
+                    msprop:Generator_RowDeletedName="TableRowDeleted"
+                    msprop:Generator_RowEvArgName="TableRowChangeEvent"
+                    msprop:Generator_RowChangedName="TableRowChanged" msprop:Generator_RowClassName="TableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="prest_pk" msdata:AutoIncrementSeed="-999" msdata:AutoIncrementStep="-1"
+                          msprop:Generator_ColumnVarNameInTable="columnprest_pk"
+                          msprop:Generator_ColumnPropNameInRow="prest_pk"
+                          msprop:Generator_ColumnPropNameInTable="prest_pkColumn"
+                          msprop:Generator_UserColumnName="prest_pk" type="xs:int" />
+              <xs:element name="prest_description" msprop:nullValue="_empty"
+                          msprop:Generator_ColumnPropNameInRow="prest_description"
+                          msprop:Generator_ColumnVarNameInTable="columnprest_description"
+                          msprop:Generator_ColumnPropNameInTable="prest_descriptionColumn"
+                          msprop:Generator_UserColumnName="prest_description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="prest_nb_unite" msprop:Generator_ColumnVarNameInTable="columnprest_nb_unite"
+                          msprop:Generator_ColumnPropNameInRow="prest_nb_unite"
+                          msprop:Generator_ColumnPropNameInTable="prest_nb_uniteColumn"
+                          msprop:Generator_UserColumnName="prest_nb_unite" type="xs:int" minOccurs="0" />
+              <xs:element name="prest_taux" msprop:Generator_ColumnVarNameInTable="columnprest_taux"
+                          msprop:Generator_ColumnPropNameInRow="prest_taux"
+                          msprop:Generator_ColumnPropNameInTable="prest_tauxColumn"
+                          msprop:Generator_UserColumnName="prest_taux" type="xs:decimal" minOccurs="0" />
+              <xs:element name="prest_date" msprop:Generator_ColumnVarNameInTable="columnprest_date"
+                          msprop:Generator_ColumnPropNameInRow="prest_date"
+                          msprop:Generator_ColumnPropNameInTable="prest_dateColumn"
+                          msprop:Generator_UserColumnName="prest_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="prest_remarque" msprop:nullValue="_empty"
+                          msprop:Generator_ColumnPropNameInRow="prest_remarque"
+                          msprop:Generator_ColumnVarNameInTable="columnprest_remarque"
+                          msprop:Generator_ColumnPropNameInTable="prest_remarqueColumn"
+                          msprop:Generator_UserColumnName="prest_remarque" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1024" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="dos_nom" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="dos_nom"
+                          msprop:Generator_ColumnVarNameInTable="columndos_nom"
+                          msprop:Generator_ColumnPropNameInTable="dos_nomColumn"
+                          msprop:Generator_UserColumnName="dos_nom" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="dos_ref" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="dos_ref"
+                          msprop:Generator_ColumnVarNameInTable="columndos_ref"
+                          msprop:Generator_ColumnPropNameInTable="dos_refColumn"
+                          msprop:Generator_UserColumnName="dos_ref" type="xs:string" minOccurs="0" />
+              <xs:element name="dos_client" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="dos_client"
+                          msprop:Generator_ColumnVarNameInTable="columndos_client"
+                          msprop:Generator_ColumnPropNameInTable="dos_clientColumn"
+                          msprop:Generator_UserColumnName="dos_client" type="xs:string" minOccurs="0" />
+              <xs:element name="prest_user_fk" msprop:Generator_ColumnVarNameInTable="columnprest_user_fk"
+                          msprop:Generator_ColumnPropNameInRow="prest_user_fk"
+                          msprop:Generator_ColumnPropNameInTable="prest_user_fkColumn"
+                          msprop:Generator_UserColumnName="prest_user_fk" type="xs:int" minOccurs="0" />
+              <xs:element name="user_nom" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="user_nom"
+                          msprop:Generator_ColumnVarNameInTable="columnuser_nom"
+                          msprop:Generator_ColumnPropNameInTable="user_nomColumn"
+                          msprop:Generator_UserColumnName="user_nom" type="xs:string" minOccurs="0" />
+              <xs:element name="user_initiales" msprop:nullValue="_empty"
+                          msprop:Generator_ColumnPropNameInRow="user_initiales"
+                          msprop:Generator_ColumnVarNameInTable="columnuser_initiales"
+                          msprop:Generator_ColumnPropNameInTable="user_initialesColumn"
+                          msprop:Generator_UserColumnName="user_initiales" type="xs:string" minOccurs="0" />
+              <xs:element name="prest_type_fk" msprop:Generator_ColumnVarNameInTable="columnprest_type_fk"
+                          msprop:Generator_ColumnPropNameInRow="prest_type_fk"
+                          msprop:Generator_ColumnPropNameInTable="prest_type_fkColumn"
+                          msprop:Generator_UserColumnName="prest_type_fk" type="xs:int" minOccurs="0" />
+              <xs:element name="type_code" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="type_code"
+                          msprop:Generator_ColumnVarNameInTable="columntype_code"
+                          msprop:Generator_ColumnPropNameInTable="type_codeColumn"
+                          msprop:Generator_UserColumnName="type_code" type="xs:string" minOccurs="0" />
+              <xs:element name="type_reference" msprop:nullValue="_empty"
+                          msprop:Generator_ColumnPropNameInRow="type_reference"
+                          msprop:Generator_ColumnVarNameInTable="columntype_reference"
+                          msprop:Generator_ColumnPropNameInTable="type_referenceColumn"
+                          msprop:Generator_UserColumnName="type_reference" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

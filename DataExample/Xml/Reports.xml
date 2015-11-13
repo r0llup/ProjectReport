@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Reports xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../Schemas/Reports.xsd">
+  <Report Name="Prestation de test">
+    <DataSets>
+    </DataSets>
+    <Body>
+      <ReportItems>
+        <Tablix Name="reportTable" DataSet="Table" Dynamic="false" Paginate="false" Style=".pretty"
+                PaginationType="full_numbers">
+          <TablixBody Linked="true">
+            <TablixRows>
+              <TablixRow>
+                <TablixCells>
+                  <TablixCell Id="prest_pk"></TablixCell>
+                  <TablixCell Id="prest_taux"></TablixCell>
+                  <TablixCell Id="prest_date"></TablixCell>
+                  <TablixCell Id="user_initiales"></TablixCell>
+                  <TablixCell Id="prest_description"></TablixCell>
+                  <TablixCell Id="prest_nb_unite"></TablixCell>
+                  <TablixCell Id="prest_user_fk"></TablixCell>
+                  <TablixCell Id="user_nom"></TablixCell>
+                </TablixCells>
+              </TablixRow>
+            </TablixRows>
+          </TablixBody>
+          <TablixHeader>
+            <TablixRows>
+              <TablixRow>
+                <TablixCells>
+                  <TablixCell Style=".fixed_size">
+                    <TextBox Value="@label_prest_pk"></TextBox>
+                  </TablixCell>
+                  <TablixCell Style=".fixed_size">
+                    <TextBox Value="@label_prest_taux"></TextBox>
+                  </TablixCell>
+                  <TablixCell Style=".fixed_size">
+                    <TextBox Value="@label_prest_date"></TextBox>
+                  </TablixCell>
+                  <TablixCell Style=".fixed_size">
+                    <TextBox Value="@label_user_initiales"></TextBox>
+                  </TablixCell>
+                  <TablixCell Style=".fixed_size">
+                    <TextBox Value="@label_prest_description"></TextBox>
+                  </TablixCell>
+                  <TablixCell Style=".fixed_size">
+                    <TextBox Value="@label_prest_nb_unite"></TextBox>
+                  </TablixCell>
+                  <TablixCell Style=".fixed_size">
+                    <TextBox Value="@label_prest_user_fk"></TextBox>
+                  </TablixCell>
+                  <TablixCell Style=".fixed_size">
+                    <TextBox Value="@label_user_nom"></TextBox>
+                  </TablixCell>
+                </TablixCells>
+              </TablixRow>
+            </TablixRows>
+          </TablixHeader>
+          <TablixFooter>
+            <TablixRows>
+              <TablixRow>
+                <TablixCells>
+                  <TablixCell Style=".fixed_size">
+                    <TextBox Value="=LAST(prest_pk)"></TextBox>
+                  </TablixCell>
+                  <TablixCell Style=".fixed_size">
+                    <TextBox Value="=SUM(prest_taux)"></TextBox>
+                  </TablixCell>
+                  <TablixCell Style=".fixed_size">
+                    <TextBox Value="=FIRST(prest_date)"></TextBox>
+                  </TablixCell>
+                  <TablixCell Style=".fixed_size">
+                    <TextBox Value="=MAX(user_initiales)"></TextBox>
+                  </TablixCell>
+                  <TablixCell Style=".fixed_size">
+                    <TextBox Value="=COUNT(prest_description)"></TextBox>
+                  </TablixCell>
+                  <TablixCell Style=".fixed_size">
+                    <TextBox Value="=AVG(prest_nb_unite)"></TextBox>
+                  </TablixCell>
+                  <TablixCell Style=".fixed_size">
+                    <TextBox Value="=AVG(prest_user_fk)"></TextBox>
+                  </TablixCell>
+                  <TablixCell Style=".fixed_size">
+                    <TextBox Value="=FIRST(user_nom)"></TextBox>
+                  </TablixCell>
+                </TablixCells>
+              </TablixRow>
+            </TablixRows>
+          </TablixFooter>
+          <TablixColumnHierarchy>
+            <Group Name="grp" On="user_initiales"></Group>
+            <TablixHeader>
+              <TablixRows>
+                <TablixRow>
+                  <TablixCells>
+                    <TablixCell Style=".custom_style1">
+                      <TextBox Value="Moyenne des taux de prestations:"></TextBox>
+                    </TablixCell>
+                    <TablixCell>
+                      <TextBox Value="=AVG(prest_taux)"></TextBox>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixHeader>
+            <TablixFooter>
+              <TablixRows>
+                <TablixRow>
+                  <TablixCells>
+                    <TablixCell ColSpan="1" Style=".fixed_size">
+                      <TextBox Value="=SUM(prest_pk)"></TextBox>
+                    </TablixCell>
+                    <TablixCell ColSpan="1" Style=".fixed_size">
+                      <TextBox Value="=SUM(prest_taux)"></TextBox>
+                    </TablixCell>
+                    <TablixCell ColSpan="1" Style=".fixed_size">
+                      <TextBox Value="=SUM(prest_date)"></TextBox>
+                    </TablixCell>
+                    <TablixCell ColSpan="1" Style=".fixed_size">
+                      <TextBox Value="=SUM(user_initiales)"></TextBox>
+                    </TablixCell>
+                    <TablixCell ColSpan="1" Style=".fixed_size">
+                      <TextBox Value="=SUM(prest_description)"></TextBox>
+                    </TablixCell>
+                    <TablixCell ColSpan="1" Style=".fixed_size">
+                      <TextBox Value="=SUM(prest_nb_unite)"></TextBox>
+                    </TablixCell>
+                    <TablixCell ColSpan="1" Style=".fixed_size">
+                      <TextBox Value="=SUM(prest_user_fk)"></TextBox>
+                    </TablixCell>
+                    <TablixCell ColSpan="1" Style=".fixed_size">
+                      <TextBox Value="=SUM(user_nom)"></TextBox>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixFooter>
+          </TablixColumnHierarchy>
+          <!--<TablixColumns Sorting="[4,'desc'],[3,'asc']" Reorderable="true" Hideable="true">
+            <TablixColumnsGrouping ColumnIndex="3" Expandable="true" ExpandSingle="false"></TablixColumnsGrouping>
+          </TablixColumns>-->
+          <TablixChart Type="line" Subtitle="Prestation de test" Container="#reportChart"></TablixChart>
+        </Tablix>
+        <Box Style="#reportChart"></Box>
+        <Chart DataSet="ChartTesting" Type="Column" XSerieColumnName="user_initiales_sum"
+               YSerieColumnName="prest_nb_unite_sum"
+               ImagesDirectoryPath="Images" XLabel="Initiales de l'utilisateur" YLabel="Nombre d'unités de prestation">
+        </Chart>
+      </ReportItems>
+    </Body>
+    <PageHeader Style="#pageHeader">
+      <Tablix Style="#tablix">
+        <TablixBody>
+          <TablixRows>
+            <TablixRow>
+              <TablixCells>
+                <TablixCell Style=".header">
+                  <TextBox Value="Pyramiq" Type="System.String"></TextBox>
+                </TablixCell>
+                <TablixCell Style=".header2">
+                  <TextBox Value="=DATE" Type="System.String"></TextBox>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+      </Tablix>
+      <TextBox Style=".textbox" Value="Prestations / Générique" Tag="P"></TextBox>
+      <Tablix Style="#tablix">
+        <TablixHeader>
+          <TablixRows>
+            <TablixRow>
+              <TablixCells>
+                <TablixCell Style=".header3">
+                  <TextBox Value="Dossier : /" Type="System.String"></TextBox>
+                </TablixCell>
+                <TablixCell Style=".header4">
+                  <TextBox Value="Date : /" Type="System.String"></TextBox>
+                </TablixCell>
+                <TablixCell Style=".header5">
+                  <TextBox Value="Utilisateur : YR" Type="System.String"></TextBox>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixHeader>
+      </Tablix>
+      <TextBox Style=".textbox2" Value="[Closing] = &quot;2.13.03.01&quot;"></TextBox>
+    </PageHeader>
+    <PageFooter Style="#foot">
+      <Tablix Style="#tablix">
+        <TablixHeader>
+          <TablixRows>
+            <TablixRow>
+              <TablixCells>
+                <TablixCell Style=".header">
+                  <TextBox Value="Powered by DLex" Type="System.String"></TextBox>
+                </TablixCell>
+                <TablixCell Style=".header6">
+                  <TextBox Value="YR" Type="System.String"></TextBox>
+                </TablixCell>
+                <TablixCell Style=".header6">
+                  <TextBox Value="1/1" Type="System.String"></TextBox>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixHeader>
+      </Tablix>
+    </PageFooter>
+  </Report>
+</Reports>

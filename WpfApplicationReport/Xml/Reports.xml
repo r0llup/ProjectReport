@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Reports xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../Schemas/Reports.xsd">
+  <Report Name="Default">
+    <DataSets>
+    </DataSets>
+    <Body>
+      <ReportItems>
+      </ReportItems>
+    </Body>
+    <PageHeader>
+    </PageHeader>
+    <PageFooter>
+    </PageFooter>
+  </Report>
+</Reports>

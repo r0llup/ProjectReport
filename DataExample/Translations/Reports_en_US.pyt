@@ -1,0 +1,8 @@
+﻿label_prest_pk=Primary key
+label_prest_taux=Rate
+label_prest_date=Date
+label_user_initiales=User initiales
+label_prest_description=Description
+label_prest_nb_unite=Units number
+label_prest_user_fk=Foreign Key User
+label_user_nom=User name

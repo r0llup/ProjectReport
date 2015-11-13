@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{96C29260-98D3-47EC-86D1-30DD2E0F74D5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClassLibraryReport</RootNamespace>
+    <AssemblyName>ClassLibraryReport</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\Statss.cs" />
+    <Compile Include="Data\Serie.cs" />
+    <Compile Include="Data\Series.cs" />
+    <Compile Include="Data\Seriess.cs" />
+    <Compile Include="Data\Stats.cs" />
+    <Compile Include="Interfaces\IChart.cs" />
+    <Compile Include="Interfaces\IGroup.cs" />
+    <Compile Include="Interfaces\IStatss.cs" />
+    <Compile Include="Interfaces\ISeriess.cs" />
+    <Compile Include="Interfaces\IData.cs" />
+    <Compile Include="Interfaces\ISeries.cs" />
+    <Compile Include="Interfaces\IStats.cs" />
+    <Compile Include="Interfaces\ITablix.cs" />
+    <Compile Include="Interfaces\ITablixCell.cs" />
+    <Compile Include="Interfaces\ITablixColumnHierarchy.cs" />
+    <Compile Include="Interfaces\ITablixRow.cs" />
+    <Compile Include="Interfaces\ITextBox.cs" />
+    <Compile Include="Utils\StatsHelper.cs" />
+    <Compile Include="Utils\TranslationsHelper.cs" />
+    <Compile Include="View\Body.cs" />
+    <Compile Include="View\Box.cs" />
+    <Compile Include="View\Chart.cs" />
+    <Compile Include="View\Group.cs" />
+    <Compile Include="View\TablixBody.cs" />
+    <Compile Include="View\TablixCell.cs" />
+    <Compile Include="View\TablixCells.cs" />
+    <Compile Include="View\TablixChart.cs" />
+    <Compile Include="View\TablixColumnHierarchy.cs" />
+    <Compile Include="View\TablixColumns.cs" />
+    <Compile Include="Common\Datas.cs" />
+    <Compile Include="View\Container.cs" />
+    <Compile Include="Data\DataSet.cs" />
+    <Compile Include="Data\DataSets.cs" />
+    <Compile Include="Data\FieldDescriptor.cs" />
+    <Compile Include="Data\FieldDescriptors.cs" />
+    <Compile Include="Data\Fieldss.cs" />
+    <Compile Include="View\TablixColumnsGrouping.cs" />
+    <Compile Include="View\PageFooter.cs" />
+    <Compile Include="View\PageHeader.cs" />
+    <Compile Include="View\Tablix.cs" />
+    <Compile Include="View\TablixContainer.cs" />
+    <Compile Include="View\TablixFooter.cs" />
+    <Compile Include="View\TablixHeader.cs" />
+    <Compile Include="View\TablixRow.cs" />
+    <Compile Include="View\TablixRows.cs" />
+    <Compile Include="Interfaces\IDatas.cs" />
+    <Compile Include="Interfaces\IDataSet.cs" />
+    <Compile Include="Interfaces\IDisplayable.cs" />
+    <Compile Include="Interfaces\IField.cs" />
+    <Compile Include="Interfaces\IFieldDescriptor.cs" />
+    <Compile Include="Interfaces\IHtmlRenderer.cs" />
+    <Compile Include="Interfaces\IParser.cs" />
+    <Compile Include="Interfaces\IReport.cs" />
+    <Compile Include="Interfaces\IXmlParser.cs" />
+    <Compile Include="Utils\DsUpdater.cs" />
+    <Compile Include="Utils\MhtConverter.cs" />
+    <Compile Include="Utils\ObjConverter.cs" />
+    <Compile Include="Utils\SimpleXmlUpdater.cs" />
+    <Compile Include="Utils\DsConverter.cs" />
+    <Compile Include="Data\Field.cs" />
+    <Compile Include="Data\Fields.cs" />
+    <Compile Include="Renderers\Renderer.cs" />
+    <Compile Include="Renderers\HtmlRenderer.cs" />
+    <Compile Include="Interfaces\IRenderer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Report.cs" />
+    <Compile Include="View\Reports.cs" />
+    <Compile Include="Utils\Serializer.cs" />
+    <Compile Include="Parsers\SimpleXmlParser.cs" />
+    <Compile Include="View\TextBox.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Diagrams\ClassDiagramCommon.cd" />
+    <None Include="Diagrams\ClassDiagramData.cd" />
+    <None Include="Diagrams\ClassDiagramRenderers.cd" />
+    <None Include="Diagrams\ClassDiagramInterfaces.cd" />
+    <None Include="Diagrams\ClassDiagramParsers.cd" />
+    <None Include="Diagrams\ClassDiagramUtils.cd" />
+    <None Include="Diagrams\ClassDiagramView.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{B691E011-1797-432E-907A-4D8C69339129}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CDO">
+      <Guid>{CD000000-8B95-11D1-82DB-00C04FB1625D}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
